@@ -1,0 +1,8 @@
+Time Complexity: O(n log n)
+This is a greedy solution but it took much times from me to solve. Actually, there must require data structure.
+There are some cases; initially if we choose the case;
+there are a front-row tiles tiled for cheapest,b in the back row and a≤b.
+Firstly, we need to find that which a of these b back-row tiles should be matched with the front row.
+By using shortest possible back-row tile for each front-row, which means that the left-overs are as tall as possible.
+After completed the task, we can ignore the left-most a position and their tiles, and solve the problem again with the remaining tiles.
+By the way we can find the shortest available tile for each spot requires some form of query structure which is a balanced binary tree.
